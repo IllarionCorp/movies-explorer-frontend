@@ -1,9 +1,14 @@
 .header {
+    position: relative;
     min-width: 768px;
     display: flex;
-    border: 1px solid red;
     justify-content: space-between;
     align-items: center;
+    background-color: #202020;
+}
+
+.header_blue {
+    background-color: #073042;
 }
 
 .header__logo {
@@ -28,6 +33,7 @@
 }
 
 .header__menu-link {
+    margin: 0;
     font-style: normal;
     color: #FFFFFF;
     font-size: 14px;
@@ -69,6 +75,7 @@
 }
 
 .header__menu-button {
+    padding: 0;
     width: 76px;
     height: 32px;
     border-radius: 3px;

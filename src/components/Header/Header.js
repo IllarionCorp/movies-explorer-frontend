@@ -3,7 +3,7 @@ import './Header.css';
 
 export default function Header() {
     return (
-        <header className='header'>
+        <header className='header header_blue'>
             <button className='header__logo'></button>
             <nav className='header__menu'>
                 <p className='header__menu-link header__menu-link_films'>
