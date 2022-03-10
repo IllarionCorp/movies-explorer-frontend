@@ -1,7 +1,9 @@
 #app {
   font-family: "Inter";
   width: 100%;
-  border: 1px, solid, red;
+  min-height: 100vh;
   display: grid;
-  grid-auto-flow: row;  
+  grid-template-rows: max-content;
+  grid-auto-flow: row dense;
+  background-color: #202020;
 }
