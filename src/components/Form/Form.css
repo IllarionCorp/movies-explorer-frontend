@@ -7,16 +7,71 @@
     align-self: baseline;
 }
 
-.form__input-name {
+.form__submit-button {
+    padding: 0;
+    border: none;
+    background: #4285F4;
+    border-radius: 3px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.form__submit-button:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.form__question {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #8B8B8B;
     margin: 0;
+    margin-top: 16px;
+    margin-bottom: 70px;
+}
+
+.reg__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #4285F4;
+    margin: 0;
+    text-decoration: none;
+    cursor: default;
+}
+
+.reg__link:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.form-input-error {
+    margin: 5px 0;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
     line-height: 12px;
-    color: #8B8B8B;
+    color: #EE3465;
 }
 
-.form__input {
+.form-input-error:last-of-type {
+    margin-bottom: 0;
+}
+.form-input {
     margin-top: 5px;
     border: none;
     outline: none;
@@ -33,41 +88,12 @@
     padding-bottom: 10px;
 }
 
-.form__submit-button {
-    padding: 0;
-    border: none;
-    background: #4285F4;
-    border-radius: 3px;
-    margin-top: 134px;
-    padding-top: 13px;
-    padding-bottom: 15px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.form__question {
+.form-input-name {
+    margin: 0;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
     color: #8B8B8B;
-    margin: 0;
-    margin-top: 16px;
 }
 
-.reg__link {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #4285F4;
-    margin: 0;
-    text-decoration: none;
-}

@@ -2,22 +2,29 @@ import React from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import Form from '../Form/Form';
 import { Route, Routes } from 'react-router-dom';
 import Footer from '../Footer/Footer';
+import SignInFormInput from '../SignInFormInput/SignInFormInput';
+import SignUpFormInput from '../SignUpFormInput/SignUpFormInput';
 
 function App() {
-    const [loggedIn, setLoggedIn] = React.useState(true);
+    const [loggedIn, setLoggedIn] = React.useState(false);
 
     return (
     <Routes>
-         <Route path='/signin' element={
+         <Route path="/signin" element={
             <>
               <Header modefi={"header_sign"} titleText={'Рады видеть!'}/>
-               <Form buttonText={'Войти'}/>
+              <SignInFormInput buttonText={'Войти'}/>
             </>   
         }/>
-        <Route path='/' element={
+        <Route path='/signup' element={
+          <>
+            <Header modefi={"header_sign"} titleText={'Добро пожаловать!'} />
+            <SignUpFormInput buttonText={'Зарегистрировать'} />
+          </>
+        } />
+        <Route path="/" element={
             <>
               <Header loggedIn={loggedIn} modefi={"header_blue"} />
               <Main />
