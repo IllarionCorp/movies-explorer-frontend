@@ -1,3 +1,4 @@
+import AboutMe from "../AboutMe/AboutMe";
 import AboutProject from "../AboutProject/AboutProject";
 import NavTab from "../NavTab/NavTab";
 import Promo from "../Promo/Promo";
@@ -10,6 +11,7 @@ export default function Main() {
             <NavTab />
             <AboutProject />
             <Techs />
+            <AboutMe />
         </main>
     );
 }
