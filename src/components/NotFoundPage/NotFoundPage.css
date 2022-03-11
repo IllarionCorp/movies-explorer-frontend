@@ -1,9 +1,4 @@
 .not-found-page {
-    height: 100vh;
-}
-
-.not-found-page__text {
-    height: inherit;
     display: flex;
     flex-direction: column;
 }
@@ -16,6 +11,7 @@
     line-height: 169px;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 246px;
 }
 
 .not-found-page__description {

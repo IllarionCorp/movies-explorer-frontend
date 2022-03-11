@@ -7,9 +7,10 @@ import Footer from '../Footer/Footer';
 import SignInFormInput from '../SignInFormInput/SignInFormInput';
 import SignUpFormInput from '../SignUpFormInput/SignUpFormInput';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
+import Profile from '../Profile/Profile';
 
 function App() {
-    const [loggedIn, setLoggedIn] = React.useState(false);
+    const [loggedIn, setLoggedIn] = React.useState(true);
 
     return (
     <Routes>
@@ -32,7 +33,12 @@ function App() {
               <Footer />
             </>
         } />
-
+        <Route path='/profile' element={
+          <>
+            <Header loggedIn={loggedIn} />
+            <Profile />
+          </>
+        } />
         <Route path="*" element={
             <>
                 <NotFoundPage />
