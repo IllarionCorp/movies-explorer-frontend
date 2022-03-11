@@ -2,7 +2,8 @@ import Form from "../Form/Form";
 
 export default function SignUpFormInput(props) {
     return (
-        <Form typeForm={props.typeForm} buttonText={props.buttonText}>
+        <Form typeForm={props.typeForm} buttonText={props.buttonText}  question={props.question} link={props.link} linkText={props.linkText}>
+            <div className="form-inputs">
             <p className='form-input-name'>Имя</p>
             <input type="text" className='form-input' />
             <span className='form-input-error'>aaaaaaaa</span>
@@ -12,6 +13,7 @@ export default function SignUpFormInput(props) {
             <p className='form-input-name'>Пароль</p>
             <input type='password' className='form-input' />
             <span className='form-input-error'>aaaaaaaa</span>
+            </div>
         </Form>
     );
 }
