@@ -8,6 +8,7 @@ import SignInFormInput from '../SignInFormInput/SignInFormInput';
 import SignUpFormInput from '../SignUpFormInput/SignUpFormInput';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import Profile from '../Profile/Profile';
+import Movies from '../Movies/Movies';
 
 function App() {
     const [loggedIn, setLoggedIn] = React.useState(true);
@@ -37,6 +38,12 @@ function App() {
           <>
             <Header loggedIn={loggedIn} />
             <Profile />
+          </>
+        } />
+        <Route path='/movies' element={
+          <>
+            <Header loggedIn={loggedIn} />
+            <Movies />
           </>
         } />
         <Route path="*" element={
