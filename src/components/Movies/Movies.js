@@ -1,12 +1,14 @@
+import More from '../More/More';
 import MoviesCardList from '../MoviesCardList/MoviesCardList';
 import SearchForm from '../SearchForm/SearchForm'
 import './Movies.css';
 
-export default function Movies() {
+export default function Movies(props) {
     return (
         <main className='movies'>
             <SearchForm />
-            <MoviesCardList />
+            <MoviesCardList cards={props.cards} />
+            <More />
         </main>
     );
 }

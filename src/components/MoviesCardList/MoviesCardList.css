@@ -1,4 +1,9 @@
 .film-list {
     display: grid;
-    
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(4, 320px);
+    gap: 32px;
+    justify-content: center;
+    /* grid-auto-rows: 320px;
+    grid-auto-columns: 360px; */
 }

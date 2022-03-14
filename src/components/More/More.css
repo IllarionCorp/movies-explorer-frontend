@@ -1,0 +1,30 @@
+.more {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.more__text {
+    margin: 0;
+    border: none;
+    text-align: center;
+    width: 100%;
+    max-width: 1140px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background: #2F2F2F;
+    border-radius: 6px;
+}
+
+.more__text:hover {
+    opacity: 0.7;
+    transition: .3s;
+    cursor: pointer;
+}
