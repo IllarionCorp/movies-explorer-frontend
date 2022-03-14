@@ -1,11 +1,11 @@
 .techs {
     background-color: #272727;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .techs__title {
     margin: 0;
-    margin-left: 70px;
-    margin-right: 70px;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -19,8 +19,6 @@
 
 .description {
     display: flex;
-    margin-left: 70px;
-    margin-right: 70px;
     flex-direction: column;
     text-align: center;
 }
@@ -75,3 +73,9 @@
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 950px) {
+    .techs {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

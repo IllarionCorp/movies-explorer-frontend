@@ -1,4 +1,6 @@
 .about-me {
+    padding-left: 70px;
+    padding-right: 70px;
     max-width: 100%;
     background-color: #202020;
     display: grid;
@@ -13,7 +15,6 @@
 
 .about-me__title {
     grid-area: title;
-    margin: 0 70px;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
@@ -27,7 +28,6 @@
 
 .about-me-description {
     grid-area: description;
-    margin-left: 70px;
     margin-top: 66px;
 }
 
@@ -72,12 +72,10 @@
     border-radius: 10px;
     margin-top: 66px;
     justify-self: end;
-    margin-right: 70px;
 }
 
 .about-me__links {
     grid-area: links;
-    margin-left: 70px;
     text-align: start;
     align-self: end;
 }
@@ -100,7 +98,7 @@
 .portfolio {
     width: inherit;
     grid-area: portfolio;
-    margin: 100px 70px 125px;
+    margin: 100px 0 125px;
     display: flex;
     flex-direction: column;
 }
@@ -131,4 +129,33 @@
 
 .portfolio__link:last-of-type {
     border: none;
+}
+
+@media screen and (max-width: 950px) {
+    .about-me {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-me-description__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .about-me-description__profession {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .about-me-description__text {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 20px;
+        margin-right: 49px;
+    }
+
+    .portfolio__link {
+        font-size: 28px;
+        line-height: 50px;
+    }
 }

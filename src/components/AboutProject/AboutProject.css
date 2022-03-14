@@ -1,11 +1,11 @@
 .about-project {
-    background-color: #202020;
+    background-color: #202020;  
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .about-project__title {
     margin: 0;
-    margin-left: 70px;
-    margin-right: 70px;
     padding-top: 110px;
     padding-bottom: 23px;
     border-bottom: 1px solid #DADADA;
@@ -19,8 +19,6 @@
 
 .about-project__description {
     margin-top: 70px;
-    margin-left: 70px;
-    margin-right: 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, max-content);
@@ -50,7 +48,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(2, max-content);
-    padding: 110px 70px;
+    padding: 110px 0;
     row-gap: 14px;
     
 }
@@ -81,4 +79,15 @@
     line-height: 17px;
     text-align: center;
     color: #8B8B8B;
+}
+
+@media screen and (max-width: 950px) {
+    .about-project {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-project__description {
+        gap: 22px 30px;
+    }
 }

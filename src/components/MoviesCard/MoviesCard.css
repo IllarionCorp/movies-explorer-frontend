@@ -50,6 +50,8 @@
     width: 100px;
     height: 29px;
     position: relative;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 .film-card__save-btn:hover {
@@ -80,4 +82,17 @@
 
 .film-card__save-btn:checked:after {
     content: url('../../images/checkmark.svg');
+}
+
+
+.film-card__save-btn_delete::after {
+    content: url('../../images/cross.svg');
+}
+
+.film-card__save-btn_delete:checked {
+    background: #313131;
+}
+
+.film-card__save-btn_delete:checked::after {
+    content: url('../../images/cross.svg');;
 }

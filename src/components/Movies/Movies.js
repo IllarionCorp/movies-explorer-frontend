@@ -7,7 +7,7 @@ export default function Movies(props) {
     return (
         <main className='movies'>
             <SearchForm />
-            <MoviesCardList cards={props.cards} />
+            <MoviesCardList cards={props.cards} saveClass={' '} />
             <More />
         </main>
     );

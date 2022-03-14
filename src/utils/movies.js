@@ -10,7 +10,7 @@ const movies = [
         _id: '2',       
         name: 'a',
         time: '23',
-        img: 'https://avatars.mds.yandex.net/i?id=4601bfb4541edd301ff621f00b8f929b-5452446-images-thumbs&n=13'
+        img: 'https://masyamba.ru/ветряная-мельница-картинки/43-мельница-картинки.jpg'
        },
 
        {
@@ -76,11 +76,10 @@ const movies = [
         img: 'https://avatars.mds.yandex.net/i?id=4601bfb4541edd301ff621f00b8f929b-5452446-images-thumbs&n=13'
        },
        {
-        _id: '13',       
+        _id: 13,       
         name: 'a',
         time: '23',
         img: 'https://avatars.mds.yandex.net/i?id=4601bfb4541edd301ff621f00b8f929b-5452446-images-thumbs&n=13'
-       },
-]
-
+       }
+    ]
 export default movies;
