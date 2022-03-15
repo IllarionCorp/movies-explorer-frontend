@@ -11,7 +11,7 @@ export default function Main() {
             <NavTab />
             <AboutProject />
             <Techs />
-            <AboutMe />
+            {/* <AboutMe /> */}
         </main>
     );
 }

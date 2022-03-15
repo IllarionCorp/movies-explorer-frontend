@@ -5,6 +5,7 @@
     align-items: center;
     padding-left: 70px;
     padding-right: 70px;
+    box-sizing: border-box;
 }
 
 .header_blue {
@@ -140,5 +141,21 @@
     .header {
         padding-left: 30px;
         padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .header__menu-link_reg {
+        margin-right: 14px;
+    }
+
+    .header__menu-button {
+        width: 54px;
+        height: 26px;
     }
 }
