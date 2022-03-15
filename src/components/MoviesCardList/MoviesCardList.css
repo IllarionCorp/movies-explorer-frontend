@@ -1,14 +1,16 @@
 .film-list {
     display: grid;
-    gap: 32px;
-    grid-template-columns: repeat(3, 360px);
     justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 320px;
-    grid-auto-columns: 360px;
+    grid-auto-columns: 1fr;
+    gap: 32px;
 }
 
 @media screen and (max-width: 950px) {
     .film-list {
-        grid-template-columns: repeat(2, 342px);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 24px;
+        grid-auto-rows: 309px;
     }
 }

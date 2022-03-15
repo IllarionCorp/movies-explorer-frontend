@@ -8,33 +8,10 @@ export default function Header(props) {
           props.modefi !== "header_sign" ? (
             <>
             <Link to='/'><button type="button" className="header__logo" /></Link>
-            <nav
-                className={"header__menu"}
-             >
-            {props.loggedIn ? (
-            <>
-            <Link to='/movies' className="header__menu-link header__menu-link_films">Фильмы</Link>
-            <Link to='/saved-movies' className="header__menu-link header__menu-link_save-films">
-              Сохраненные фильмы
-            </Link>
-            <Link to='/profile' className="header__menu-account">
-                <p className="header__menu-link header__menu-link_acc">Аккаунт</p>
-                <div className="header__profile" />
-            </Link>  
-          </>
-        ) : (
-          <>
-            <Link to={'/signup'} className="header__menu-link header__menu-link_reg">
-              Регистрация
-            </Link>
-            <Link to={'/signin'}>
-                <button className="header__menu-button">Войти</button>
-            </Link>
-          </>
-        )}
-      </nav>
+            <nav className={"header__menu"}>
+                {props.children}
+            </nav>
             </>
-            
           ) : (
                 <>  
                     <div className="header__sign-block">

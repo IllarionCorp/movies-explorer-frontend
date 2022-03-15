@@ -11,7 +11,6 @@ export default function MoviesCardList(props) {
                     <MoviesCard img={data.img} name={data.name} time={data.time} saveClass={props.saveClass} />
                 </div>
                 )
-         
             }) }
                
         </section>

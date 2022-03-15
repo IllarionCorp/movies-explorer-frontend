@@ -37,8 +37,9 @@
 .film-card__preview {
     grid-area: image;
     justify-self: center;
-    max-height: 200px;
+    height: 200px;
     max-width: 100%;
+    object-fit: cover;
 }
 
 .film-card__save-btn {

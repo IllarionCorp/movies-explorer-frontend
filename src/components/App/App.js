@@ -11,6 +11,8 @@ import Profile from '../Profile/Profile';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import movies from '../../utils/movies';
+import HeaderNoAuth from '../HeaderNoAuth/HeaderNoAuth';
+import HeaderAuth from '../HeaderAuth/HeaderAuth';
 
 function App() {
     const [loggedIn, setLoggedIn] = React.useState(true);
@@ -31,27 +33,27 @@ function App() {
         } />
         <Route path="/" element={
             <>
-              <Header loggedIn={loggedIn} modefi={"header_blue"} />
+              <HeaderNoAuth modefi={"header_blue"} />
               <Main />
               <Footer />
             </>
         } />
         <Route path='/profile' element={
           <>
-            <Header loggedIn={loggedIn} modefi={""} />
+            <HeaderAuth modefi={""} />
             <Profile />
           </>
         } />
         <Route path='/movies' element={
           <>
-            <Header loggedIn={loggedIn} modefi={""} />
+            <HeaderAuth modefi={""} />
             <Movies cards={movies} />
             <Footer />
           </>
         } />
         <Route path='/saved-movies' element={
             <>
-                <Header loggedIn={loggedIn} modefi={""} />
+                <HeaderAuth modefi={""} />
                 <SavedMovies cards={movies} />
                 <Footer />
             </>

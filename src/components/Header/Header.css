@@ -1,6 +1,5 @@
 .header {
     position: relative;
-    min-width: 768px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +18,7 @@
     box-sizing: border-box;
     background-image: url('../../images/header-logo.svg');
     background-color: inherit;
-    margin: 18px auto 18px 0;
+    margin: 18px 0;
     cursor: pointer;
     padding: 0;
 }   
